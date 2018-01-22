@@ -10,4 +10,3 @@ Pods with:
 - MagicalRecord
 - SDWebImage
 
-# Goods

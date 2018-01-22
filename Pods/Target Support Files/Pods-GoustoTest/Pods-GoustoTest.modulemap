@@ -1,0 +1,6 @@
+framework module Pods_GoustoTest {
+  umbrella header "Pods-GoustoTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

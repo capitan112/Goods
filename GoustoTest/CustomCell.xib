@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCell" customModule="GoustoTest"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCell" customModule="GoustoTest">
+            <rect key="frame" x="0.0" y="0.0" width="646" height="97"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-Lx-MuR">
+                    <rect key="frame" x="92" y="4" width="484" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="fdZ-dg-dx0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsl-fh-hWc">
+                    <rect key="frame" x="92" y="37" width="484" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-yg-igT">
+                    <rect key="frame" x="20" y="17" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Omm-KD-EWR"/>
+                        <constraint firstAttribute="width" constant="60" id="w4g-zR-Ubx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-Q0-6xH">
+                    <rect key="frame" x="578" y="60" width="61" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="fl6-uh-6y4"/>
+                        <constraint firstAttribute="width" constant="61" id="rKN-Wr-xnx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IoH-IY-lId">
+                    <rect key="frame" x="578" y="4" width="61" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="2v2-uV-fz2"/>
+                        <constraint firstAttribute="height" constant="54" id="hc0-rD-6hZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eZS-yg-igT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Bll-f4-uZg"/>
+                <constraint firstItem="Qsl-fh-hWc" firstAttribute="top" secondItem="bCe-Lx-MuR" secondAttribute="bottom" constant="-3" id="D12-oI-IxQ"/>
+                <constraint firstItem="eZS-yg-igT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="Mgn-sb-8YG"/>
+                <constraint firstItem="bCe-Lx-MuR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="REt-os-wU0"/>
+                <constraint firstAttribute="trailing" secondItem="bCe-Lx-MuR" secondAttribute="trailing" constant="70" id="afv-Ib-jgd"/>
+                <constraint firstItem="IoH-IY-lId" firstAttribute="leading" secondItem="bCe-Lx-MuR" secondAttribute="trailing" constant="2" id="dR5-Tq-PK0"/>
+                <constraint firstAttribute="bottom" secondItem="Qsl-fh-hWc" secondAttribute="bottom" constant="5" id="hq0-Fr-Byt"/>
+                <constraint firstItem="Vkm-Q0-6xH" firstAttribute="leading" secondItem="Qsl-fh-hWc" secondAttribute="trailing" constant="2" id="mrZ-th-SjV"/>
+                <constraint firstAttribute="bottom" secondItem="Vkm-Q0-6xH" secondAttribute="bottom" constant="6" id="pgw-9t-QEI"/>
+                <constraint firstAttribute="trailing" secondItem="IoH-IY-lId" secondAttribute="trailing" constant="7" id="rHI-XX-KjY"/>
+                <constraint firstAttribute="trailing" secondItem="Vkm-Q0-6xH" secondAttribute="trailing" constant="7" id="vGH-r5-uTQ"/>
+                <constraint firstItem="bCe-Lx-MuR" firstAttribute="leading" secondItem="eZS-yg-igT" secondAttribute="trailing" constant="12" id="vKu-Pp-Wkh"/>
+                <constraint firstItem="IoH-IY-lId" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="xsj-y7-Y2c"/>
+                <constraint firstItem="Qsl-fh-hWc" firstAttribute="leading" secondItem="bCe-Lx-MuR" secondAttribute="leading" id="y6g-Hz-hBT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="category" destination="IoH-IY-lId" id="R64-5i-i4V"/>
+                <outlet property="descriptionLabel" destination="Qsl-fh-hWc" id="3cH-98-VJr"/>
+                <outlet property="photoImageView" destination="eZS-yg-igT" id="kkk-0d-wEK"/>
+                <outlet property="priceLabel" destination="Vkm-Q0-6xH" id="IbD-0F-AWt"/>
+                <outlet property="titleLabel" destination="bCe-Lx-MuR" id="n0c-Ur-qgw"/>
+            </connections>
+            <point key="canvasLocation" x="498" y="-372.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="questionMark" width="56" height="56"/>
+    </resources>
+</document>

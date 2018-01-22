@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4041A7A61E675BDA000DCC58 /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7A51E675BDA000DCC58 /* APILoader.swift */; };
+		4041A7B01E677DDE000DCC58 /* Goods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7AE1E677DDE000DCC58 /* Goods.xcdatamodeld */; };
+		4041A7B51E678BD2000DCC58 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4041A7B31E678BD2000DCC58 /* CustomCell.xib */; };
+		4041A7B61E678BD2000DCC58 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7B41E678BD2000DCC58 /* CustomCell.swift */; };
+		4041A7C01E679535000DCC58 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7BF1E679535000DCC58 /* GCDBlackBox.swift */; };
+		4041A7C21E679757000DCC58 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7C11E679757000DCC58 /* LoadingIndicatorView.swift */; };
+		4041A7C41E679B0D000DCC58 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7C31E679B0D000DCC58 /* Reachability.swift */; };
+		4041A7C81E68291A000DCC58 /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7C71E68291A000DCC58 /* VerticalAlignLabel.swift */; };
+		4041A7CE1E682C3A000DCC58 /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7CD1E682C3A000DCC58 /* Goods.swift */; };
+		4041A7E51E685840000DCC58 /* CEReversibleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7E31E685840000DCC58 /* CEReversibleAnimationController.m */; };
+		4041A7E91E6859BA000DCC58 /* CEFlipAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041A7E81E6859BA000DCC58 /* CEFlipAnimationController.m */; };
+		40521B1B1E6AEA6F00A1C6D5 /* CECardsAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40521B1A1E6AEA6F00A1C6D5 /* CECardsAnimationController.m */; };
+		406D1DAA1E6759A400B878ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406D1DA91E6759A400B878ED /* AppDelegate.swift */; };
+		406D1DAF1E6759A400B878ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406D1DAD1E6759A400B878ED /* Main.storyboard */; };
+		406D1DB11E6759A400B878ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406D1DB01E6759A400B878ED /* Assets.xcassets */; };
+		406D1DB41E6759A400B878ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406D1DB21E6759A400B878ED /* LaunchScreen.storyboard */; };
+		481041DF20132DBD007C3FF4 /* ProductMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041DE20132DBD007C3FF4 /* ProductMapper.swift */; };
+		481041E7201330B9007C3FF4 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041E6201330B9007C3FF4 /* ProductDetailsVC.swift */; };
+		481041ED201330DF007C3FF4 /* ProductDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041E8201330DF007C3FF4 /* ProductDetailsPresenter.swift */; };
+		481041EF201330DF007C3FF4 /* ProductDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041EA201330DF007C3FF4 /* ProductDetailsRouter.swift */; };
+		481041F0201330DF007C3FF4 /* ProductDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041EB201330DF007C3FF4 /* ProductDetailsModels.swift */; };
+		481041F320133131007C3FF4 /* ProductDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F220133131007C3FF4 /* ProductDetailsInteractor.swift */; };
+		481041FA20138823007C3FF4 /* ProductTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F420138823007C3FF4 /* ProductTablePresenter.swift */; };
+		481041FB20138823007C3FF4 /* ProductTableWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F520138823007C3FF4 /* ProductTableWorker.swift */; };
+		481041FC20138823007C3FF4 /* ProductTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F620138823007C3FF4 /* ProductTableRouter.swift */; };
+		481041FD20138823007C3FF4 /* ProductTableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F720138823007C3FF4 /* ProductTableModels.swift */; };
+		481041FF20138823007C3FF4 /* ProductTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481041F920138823007C3FF4 /* ProductTableInteractor.swift */; };
+		481042012013883E007C3FF4 /* ProductTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481042002013883E007C3FF4 /* ProductTableVC.swift */; };
+		48CEB3332015DE9800CF2CD0 /* ProductTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEB32F2015DE9800CF2CD0 /* ProductTableViewControllerTests.swift */; };
+		48CEB3342015DE9800CF2CD0 /* ProductTableInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEB3302015DE9800CF2CD0 /* ProductTableInteractorTests.swift */; };
+		48CEB3352015DE9800CF2CD0 /* ProductTableWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEB3312015DE9800CF2CD0 /* ProductTableWorkerTests.swift */; };
+		48CEB3362015DE9800CF2CD0 /* ProductTablePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEB3322015DE9800CF2CD0 /* ProductTablePresenterTests.swift */; };
+		A005231D512D21FE2E5CC05D /* Pods_GoustoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBA2E45B08AE55D6FA7C808 /* Pods_GoustoTestTests.framework */; };
+		D64AFD6B022E379E523E9B65 /* Pods_GoustoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4AC38E7575C1B096A7B95 /* Pods_GoustoTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		406D1DBB1E6759A400B878ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 406D1D9E1E6759A400B878ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 406D1DA51E6759A400B878ED;
+			remoteInfo = GoustoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A179F511A2845924246C2F4 /* Pods-GoustoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoustoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoustoTest/Pods-GoustoTest.release.xcconfig"; sourceTree = "<group>"; };
+		2AF4AC38E7575C1B096A7B95 /* Pods_GoustoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoustoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4041A7A51E675BDA000DCC58 /* APILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
+		4041A7AF1E677DDE000DCC58 /* Goods.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goods.xcdatamodel; sourceTree = "<group>"; };
+		4041A7B31E678BD2000DCC58 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		4041A7B41E678BD2000DCC58 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4041A7BF1E679535000DCC58 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		4041A7C11E679757000DCC58 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		4041A7C31E679B0D000DCC58 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4041A7C71E68291A000DCC58 /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
+		4041A7CD1E682C3A000DCC58 /* Goods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Goods.swift; path = ../Goods.swift; sourceTree = "<group>"; };
+		4041A7DF1E68583F000DCC58 /* GoustoTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoustoTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		4041A7E21E685840000DCC58 /* CEReversibleAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReversibleAnimationController.h; sourceTree = "<group>"; };
+		4041A7E31E685840000DCC58 /* CEReversibleAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEReversibleAnimationController.m; sourceTree = "<group>"; };
+		4041A7E71E6859BA000DCC58 /* CEFlipAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEFlipAnimationController.h; sourceTree = "<group>"; };
+		4041A7E81E6859BA000DCC58 /* CEFlipAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEFlipAnimationController.m; sourceTree = "<group>"; };
+		40521B191E6AEA6F00A1C6D5 /* CECardsAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECardsAnimationController.h; sourceTree = "<group>"; };
+		40521B1A1E6AEA6F00A1C6D5 /* CECardsAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECardsAnimationController.m; sourceTree = "<group>"; };
+		406D1DA61E6759A400B878ED /* GoustoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoustoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		406D1DA91E6759A400B878ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		406D1DAE1E6759A400B878ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		406D1DB01E6759A400B878ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		406D1DB31E6759A400B878ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		406D1DB51E6759A400B878ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406D1DBA1E6759A400B878ED /* GoustoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoustoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		406D1DC01E6759A400B878ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481041DE20132DBD007C3FF4 /* ProductMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMapper.swift; sourceTree = "<group>"; };
+		481041E6201330B9007C3FF4 /* ProductDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsVC.swift; path = ProductDetailsVC/ProductDetailsVC.swift; sourceTree = "<group>"; };
+		481041E8201330DF007C3FF4 /* ProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductDetailsPresenter.swift; path = ProductDetailsVC/ProductDetailsPresenter.swift; sourceTree = "<group>"; };
+		481041EA201330DF007C3FF4 /* ProductDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductDetailsRouter.swift; path = ProductDetailsVC/ProductDetailsRouter.swift; sourceTree = "<group>"; };
+		481041EB201330DF007C3FF4 /* ProductDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductDetailsModels.swift; path = ProductDetailsVC/ProductDetailsModels.swift; sourceTree = "<group>"; };
+		481041F220133131007C3FF4 /* ProductDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductDetailsInteractor.swift; path = ProductDetailsVC/ProductDetailsInteractor.swift; sourceTree = "<group>"; };
+		481041F420138823007C3FF4 /* ProductTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductTablePresenter.swift; path = ProductTableVC/ProductTablePresenter.swift; sourceTree = "<group>"; };
+		481041F520138823007C3FF4 /* ProductTableWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductTableWorker.swift; path = ProductTableVC/ProductTableWorker.swift; sourceTree = "<group>"; };
+		481041F620138823007C3FF4 /* ProductTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductTableRouter.swift; path = ProductTableVC/ProductTableRouter.swift; sourceTree = "<group>"; };
+		481041F720138823007C3FF4 /* ProductTableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductTableModels.swift; path = ProductTableVC/ProductTableModels.swift; sourceTree = "<group>"; };
+		481041F920138823007C3FF4 /* ProductTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductTableInteractor.swift; path = ProductTableVC/ProductTableInteractor.swift; sourceTree = "<group>"; };
+		481042002013883E007C3FF4 /* ProductTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductTableVC.swift; path = ProductTableVC/ProductTableVC.swift; sourceTree = "<group>"; };
+		48CEB32F2015DE9800CF2CD0 /* ProductTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewControllerTests.swift; sourceTree = "<group>"; };
+		48CEB3302015DE9800CF2CD0 /* ProductTableInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableInteractorTests.swift; sourceTree = "<group>"; };
+		48CEB3312015DE9800CF2CD0 /* ProductTableWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableWorkerTests.swift; sourceTree = "<group>"; };
+		48CEB3322015DE9800CF2CD0 /* ProductTablePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTablePresenterTests.swift; sourceTree = "<group>"; };
+		5DCCDBE9B79A555FFCF5A12D /* Pods-GoustoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoustoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoustoTest/Pods-GoustoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		66275B815D9479776FD2FA11 /* Pods-GoustoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoustoTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoustoTestTests/Pods-GoustoTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC85F97CCA04B575F82E5E3D /* Pods-GoustoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoustoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoustoTestTests/Pods-GoustoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBA2E45B08AE55D6FA7C808 /* Pods_GoustoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoustoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		406D1DA31E6759A400B878ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64AFD6B022E379E523E9B65 /* Pods_GoustoTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406D1DB71E6759A400B878ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A005231D512D21FE2E5CC05D /* Pods_GoustoTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1689CF44FCB7BDF8182CDB90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DCCDBE9B79A555FFCF5A12D /* Pods-GoustoTest.debug.xcconfig */,
+				0A179F511A2845924246C2F4 /* Pods-GoustoTest.release.xcconfig */,
+				AC85F97CCA04B575F82E5E3D /* Pods-GoustoTestTests.debug.xcconfig */,
+				66275B815D9479776FD2FA11 /* Pods-GoustoTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1AB3E05706B64C54FE7151DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4AC38E7575C1B096A7B95 /* Pods_GoustoTest.framework */,
+				EDBA2E45B08AE55D6FA7C808 /* Pods_GoustoTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4041A7C91E682A7B000DCC58 /* Supported */ = {
+			isa = PBXGroup;
+			children = (
+				481041E020132F6A007C3FF4 /* Layers */,
+				481041E120132FC7007C3FF4 /* SupportClasses */,
+			);
+			name = Supported;
+			sourceTree = "<group>";
+		};
+		4041A7CA1E682A8D000DCC58 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4041A7CB1E682A97000DCC58 /* Cells */,
+				481041E320133043007C3FF4 /* ProductTableVC */,
+				481041E22013302B007C3FF4 /* ProductDetailsVC */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4041A7CB1E682A97000DCC58 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4041A7B41E678BD2000DCC58 /* CustomCell.swift */,
+				4041A7B31E678BD2000DCC58 /* CustomCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4041A7E61E685849000DCC58 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				40521B191E6AEA6F00A1C6D5 /* CECardsAnimationController.h */,
+				40521B1A1E6AEA6F00A1C6D5 /* CECardsAnimationController.m */,
+				4041A7E71E6859BA000DCC58 /* CEFlipAnimationController.h */,
+				4041A7E81E6859BA000DCC58 /* CEFlipAnimationController.m */,
+				4041A7E21E685840000DCC58 /* CEReversibleAnimationController.h */,
+				4041A7E31E685840000DCC58 /* CEReversibleAnimationController.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		406D1D9D1E6759A400B878ED = {
+			isa = PBXGroup;
+			children = (
+				406D1DA81E6759A400B878ED /* GoustoTest */,
+				4041A7AE1E677DDE000DCC58 /* Goods.xcdatamodeld */,
+				406D1DBD1E6759A400B878ED /* GoustoTestTests */,
+				406D1DA71E6759A400B878ED /* Products */,
+				1689CF44FCB7BDF8182CDB90 /* Pods */,
+				1AB3E05706B64C54FE7151DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		406D1DA71E6759A400B878ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				406D1DA61E6759A400B878ED /* GoustoTest.app */,
+				406D1DBA1E6759A400B878ED /* GoustoTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		406D1DA81E6759A400B878ED /* GoustoTest */ = {
+			isa = PBXGroup;
+			children = (
+				4041A7CD1E682C3A000DCC58 /* Goods.swift */,
+				4041A7C91E682A7B000DCC58 /* Supported */,
+				406D1DA91E6759A400B878ED /* AppDelegate.swift */,
+				406D1DAD1E6759A400B878ED /* Main.storyboard */,
+				4041A7CA1E682A8D000DCC58 /* ViewControllers */,
+				4041A7E61E685849000DCC58 /* Animations */,
+				406D1DB01E6759A400B878ED /* Assets.xcassets */,
+				406D1DB21E6759A400B878ED /* LaunchScreen.storyboard */,
+				406D1DB51E6759A400B878ED /* Info.plist */,
+				4041A7DF1E68583F000DCC58 /* GoustoTest-Bridging-Header.h */,
+			);
+			path = GoustoTest;
+			sourceTree = "<group>";
+		};
+		406D1DBD1E6759A400B878ED /* GoustoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				406D1DC01E6759A400B878ED /* Info.plist */,
+				48CEB32F2015DE9800CF2CD0 /* ProductTableViewControllerTests.swift */,
+				48CEB3302015DE9800CF2CD0 /* ProductTableInteractorTests.swift */,
+				48CEB3312015DE9800CF2CD0 /* ProductTableWorkerTests.swift */,
+				48CEB3322015DE9800CF2CD0 /* ProductTablePresenterTests.swift */,
+			);
+			path = GoustoTestTests;
+			sourceTree = "<group>";
+		};
+		481041E020132F6A007C3FF4 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				4041A7A51E675BDA000DCC58 /* APILoader.swift */,
+				481041DE20132DBD007C3FF4 /* ProductMapper.swift */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		481041E120132FC7007C3FF4 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				4041A7BF1E679535000DCC58 /* GCDBlackBox.swift */,
+				4041A7C71E68291A000DCC58 /* VerticalAlignLabel.swift */,
+				4041A7C31E679B0D000DCC58 /* Reachability.swift */,
+				4041A7C11E679757000DCC58 /* LoadingIndicatorView.swift */,
+			);
+			name = SupportClasses;
+			sourceTree = "<group>";
+		};
+		481041E22013302B007C3FF4 /* ProductDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				481041E6201330B9007C3FF4 /* ProductDetailsVC.swift */,
+				481041F220133131007C3FF4 /* ProductDetailsInteractor.swift */,
+				481041EB201330DF007C3FF4 /* ProductDetailsModels.swift */,
+				481041E8201330DF007C3FF4 /* ProductDetailsPresenter.swift */,
+				481041EA201330DF007C3FF4 /* ProductDetailsRouter.swift */,
+			);
+			name = ProductDetailsVC;
+			sourceTree = "<group>";
+		};
+		481041E320133043007C3FF4 /* ProductTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				481042002013883E007C3FF4 /* ProductTableVC.swift */,
+				481041F920138823007C3FF4 /* ProductTableInteractor.swift */,
+				481041F520138823007C3FF4 /* ProductTableWorker.swift */,
+				481041F420138823007C3FF4 /* ProductTablePresenter.swift */,
+				481041F620138823007C3FF4 /* ProductTableRouter.swift */,
+				481041F720138823007C3FF4 /* ProductTableModels.swift */,
+			);
+			name = ProductTableVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		406D1DA51E6759A400B878ED /* GoustoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406D1DC31E6759A400B878ED /* Build configuration list for PBXNativeTarget "GoustoTest" */;
+			buildPhases = (
+				AA5AE9F5B256357C32853FEB /* [CP] Check Pods Manifest.lock */,
+				406D1DA21E6759A400B878ED /* Sources */,
+				406D1DA31E6759A400B878ED /* Frameworks */,
+				406D1DA41E6759A400B878ED /* Resources */,
+				FAE79DDBB09DFD6E03FC496D /* [CP] Embed Pods Frameworks */,
+				BF8D13609886FAC491EFC0C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoustoTest;
+			productName = GoustoTest;
+			productReference = 406D1DA61E6759A400B878ED /* GoustoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		406D1DB91E6759A400B878ED /* GoustoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406D1DC61E6759A400B878ED /* Build configuration list for PBXNativeTarget "GoustoTestTests" */;
+			buildPhases = (
+				055A52F47ECF27F2943FF7DA /* [CP] Check Pods Manifest.lock */,
+				406D1DB61E6759A400B878ED /* Sources */,
+				406D1DB71E6759A400B878ED /* Frameworks */,
+				406D1DB81E6759A400B878ED /* Resources */,
+				9BE692FA1B05C9D4E772174F /* [CP] Embed Pods Frameworks */,
+				2C5403DC2880F803FA5C366D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				406D1DBC1E6759A400B878ED /* PBXTargetDependency */,
+			);
+			name = GoustoTestTests;
+			productName = GoustoTestTests;
+			productReference = 406D1DBA1E6759A400B878ED /* GoustoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		406D1D9E1E6759A400B878ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OleksiyCheborarov;
+				TargetAttributes = {
+					406D1DA51E6759A400B878ED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M3S4J75265;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					406D1DB91E6759A400B878ED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M3S4J75265;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 406D1DA51E6759A400B878ED;
+					};
+				};
+			};
+			buildConfigurationList = 406D1DA11E6759A400B878ED /* Build configuration list for PBXProject "GoustoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 406D1D9D1E6759A400B878ED;
+			productRefGroup = 406D1DA71E6759A400B878ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				406D1DA51E6759A400B878ED /* GoustoTest */,
+				406D1DB91E6759A400B878ED /* GoustoTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		406D1DA41E6759A400B878ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406D1DB41E6759A400B878ED /* LaunchScreen.storyboard in Resources */,
+				406D1DB11E6759A400B878ED /* Assets.xcassets in Resources */,
+				4041A7B51E678BD2000DCC58 /* CustomCell.xib in Resources */,
+				406D1DAF1E6759A400B878ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406D1DB81E6759A400B878ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		055A52F47ECF27F2943FF7DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5403DC2880F803FA5C366D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoustoTestTests/Pods-GoustoTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE692FA1B05C9D4E772174F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoustoTestTests/Pods-GoustoTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA5AE9F5B256357C32853FEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8D13609886FAC491EFC0C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoustoTest/Pods-GoustoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE79DDBB09DFD6E03FC496D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoustoTest/Pods-GoustoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		406D1DA21E6759A400B878ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481041F0201330DF007C3FF4 /* ProductDetailsModels.swift in Sources */,
+				4041A7C41E679B0D000DCC58 /* Reachability.swift in Sources */,
+				481041E7201330B9007C3FF4 /* ProductDetailsVC.swift in Sources */,
+				481041FA20138823007C3FF4 /* ProductTablePresenter.swift in Sources */,
+				481041FF20138823007C3FF4 /* ProductTableInteractor.swift in Sources */,
+				481041FB20138823007C3FF4 /* ProductTableWorker.swift in Sources */,
+				4041A7C21E679757000DCC58 /* LoadingIndicatorView.swift in Sources */,
+				481041DF20132DBD007C3FF4 /* ProductMapper.swift in Sources */,
+				40521B1B1E6AEA6F00A1C6D5 /* CECardsAnimationController.m in Sources */,
+				4041A7C01E679535000DCC58 /* GCDBlackBox.swift in Sources */,
+				481041FC20138823007C3FF4 /* ProductTableRouter.swift in Sources */,
+				4041A7E91E6859BA000DCC58 /* CEFlipAnimationController.m in Sources */,
+				481041F320133131007C3FF4 /* ProductDetailsInteractor.swift in Sources */,
+				481041ED201330DF007C3FF4 /* ProductDetailsPresenter.swift in Sources */,
+				4041A7C81E68291A000DCC58 /* VerticalAlignLabel.swift in Sources */,
+				481042012013883E007C3FF4 /* ProductTableVC.swift in Sources */,
+				4041A7E51E685840000DCC58 /* CEReversibleAnimationController.m in Sources */,
+				406D1DAA1E6759A400B878ED /* AppDelegate.swift in Sources */,
+				4041A7B01E677DDE000DCC58 /* Goods.xcdatamodeld in Sources */,
+				4041A7A61E675BDA000DCC58 /* APILoader.swift in Sources */,
+				481041FD20138823007C3FF4 /* ProductTableModels.swift in Sources */,
+				481041EF201330DF007C3FF4 /* ProductDetailsRouter.swift in Sources */,
+				4041A7B61E678BD2000DCC58 /* CustomCell.swift in Sources */,
+				4041A7CE1E682C3A000DCC58 /* Goods.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406D1DB61E6759A400B878ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CEB3352015DE9800CF2CD0 /* ProductTableWorkerTests.swift in Sources */,
+				48CEB3332015DE9800CF2CD0 /* ProductTableViewControllerTests.swift in Sources */,
+				48CEB3362015DE9800CF2CD0 /* ProductTablePresenterTests.swift in Sources */,
+				48CEB3342015DE9800CF2CD0 /* ProductTableInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		406D1DBC1E6759A400B878ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 406D1DA51E6759A400B878ED /* GoustoTest */;
+			targetProxy = 406D1DBB1E6759A400B878ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		406D1DAD1E6759A400B878ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406D1DAE1E6759A400B878ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		406D1DB21E6759A400B878ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				406D1DB31E6759A400B878ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		406D1DC11E6759A400B878ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		406D1DC21E6759A400B878ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		406D1DC41E6759A400B878ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCCDBE9B79A555FFCF5A12D /* Pods-GoustoTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M3S4J75265;
+				INFOPLIST_FILE = GoustoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiycheborarov.GoustoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoustoTest/GoustoTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		406D1DC51E6759A400B878ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A179F511A2845924246C2F4 /* Pods-GoustoTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M3S4J75265;
+				INFOPLIST_FILE = GoustoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiycheborarov.GoustoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoustoTest/GoustoTest-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		406D1DC71E6759A400B878ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC85F97CCA04B575F82E5E3D /* Pods-GoustoTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M3S4J75265;
+				INFOPLIST_FILE = GoustoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiycheborarov.GoustoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoustoTest.app/GoustoTest";
+			};
+			name = Debug;
+		};
+		406D1DC81E6759A400B878ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66275B815D9479776FD2FA11 /* Pods-GoustoTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M3S4J75265;
+				INFOPLIST_FILE = GoustoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiycheborarov.GoustoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoustoTest.app/GoustoTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		406D1DA11E6759A400B878ED /* Build configuration list for PBXProject "GoustoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406D1DC11E6759A400B878ED /* Debug */,
+				406D1DC21E6759A400B878ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406D1DC31E6759A400B878ED /* Build configuration list for PBXNativeTarget "GoustoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406D1DC41E6759A400B878ED /* Debug */,
+				406D1DC51E6759A400B878ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406D1DC61E6759A400B878ED /* Build configuration list for PBXNativeTarget "GoustoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406D1DC71E6759A400B878ED /* Debug */,
+				406D1DC81E6759A400B878ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4041A7AE1E677DDE000DCC58 /* Goods.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4041A7AF1E677DDE000DCC58 /* Goods.xcdatamodel */,
+			);
+			currentVersion = 4041A7AF1E677DDE000DCC58 /* Goods.xcdatamodel */;
+			path = Goods.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 406D1D9E1E6759A400B878ED /* Project object */;
+}
